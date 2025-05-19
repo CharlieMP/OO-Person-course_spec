@@ -6,7 +6,7 @@ class Person:
         return
 
     def printFullName(self):
-        print(f{self.firstname} {self.lastname})
+        print(f"{self.firstname} {self.lastname}")
 
 
 class Student(Person):
@@ -17,11 +17,13 @@ class Student(Person):
         self.subjects = []
         return
 
+    def __str__(self):
+        return """"""
 
     def enrollClass(self, subjectName):
-        s1 = Subject()
-        s1.subjectName = subjectName
-        s1.studentID = studID
+        s1 = Subject(subjectName, self.studentID)
+        self.subjects.append
+
 
 
     def showClasses(self):
@@ -29,6 +31,19 @@ class Student(Person):
             print(subjects[i])
 
 
+class Parent(Person):
+    def __init__(self, occupation, alumni):
+        self.occupation = occupation
+        self.alumni = bool
+        
 
 class Subject():
-    def __init__(self)
+    def __init__(self, subjectName, studentID):
+        self.subjectName = subjectName
+        self.studentID = studentID
+
+    def printStudentList(self):
+        print(studentID)
+
+
+charlie = Student("Charlie", "Pudsey", 8457368, "Johnson")
